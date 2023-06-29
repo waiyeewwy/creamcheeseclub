@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>www.creamcheeseclub.com.au</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Archivo+Black:wght@400">
+    <link rel="stylesheet" href="../static/css/ccc.css"> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+    <!-- To use Bootstrap 5.2.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    
+    <!-- To use Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div id="navbar">
+        <li><a href="{{url_for('home')}}"><img src="../static/images/home.jpg" alt=""></a></li>
+        <li><a href="{{url_for('aboutus')}}">About Us</a></li>
+        <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+        <li><a href="{{url_for('faq')}}">FAQs</a></li>
+    </div>
+
+
+    <div class="products">
+        <div id="takemehome">
+
+            <img src="../static/images/IMG_1609.jpg" alt="">
+            <div id="menu">
+                <h2>Garlic & Chives</h2>
+                <img src="../static/images/phil.JPG" alt="">
+                <h2>Apricot & Macadamia</h2>
+                <img src="../static/images/phil.JPG" alt="">
+                <h2>Blueberry</h2>
+                <img src="../static/images/phil.JPG" alt="">
+            </div>
+
+
+        </div>
+        <br>
+        <br>
+        <div id="price">
+            <h2>Price</h2>
+            <h5><strong>Small</strong></h5>
+            <p>$15</p>
+            <h5>Medium</h5>
+            <p>$30</p>
+            <h5>Large</h5>
+            <p>$45</p>
+        </div>
+    </div>
+
+   
+    
+
+</body>
+
+
+</html>

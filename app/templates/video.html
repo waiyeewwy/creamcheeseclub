@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/ccc.css"> 
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function() {
+            // Get the video elements
+            var videos = $('.introvid');
+            var navbar = $('#navbar');
+            var content = $('#content');
+            var vidimg = $('#vidimg');
+            var footer = $('#footer');
+    
+            // Hide the navbar initially
+            navbar.hide();
+            content.hide();
+            vidimg.hide();
+            footer.hide();
+    
+            // Function to play the videos
+            function playVideos() {
+                var numVideos = videos.length;
+                var videosPlayed = 0;
+    
+                function onVideoEnded() {
+                    videosPlayed++;
+    
+                    if (videosPlayed === numVideos) {
+                        // All videos have finished playing
+                        navbar.slideDown(1000);
+                        vidimg.show();
+                        content.slideDown(1000);
+                        footer.show();
+    
+                        // Scroll to the content below
+                        $('html, body').animate({
+                            scrollTop: $('#content').offset().top
+                        }, 1000);
+                    }
+                }
+    
+                // Attach 'ended' event listener to each video
+                videos.each(function() {
+                    var video = this;
+                    video.onended = onVideoEnded;
+                    video.play();
+                });
+            }
+    
+            // Play the videos
+            playVideos();
+        });
+    </script>
+    
+    
+    <div class="introvid-container">
+        <video class="introvid" autoplay>
+            <source src="../static/images/ccc1.mp4" type="video/mp4">
+        </video>
+        <video class="introvid" autoplay>
+            <source src="../static/images/ccc2.mp4" type="video/mp4">
+        </video>
+        <video class="introvid" autoplay>
+            <source src="../static/images/ccc3.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    
+
+
+    
+</body>
+
+
+</html>
