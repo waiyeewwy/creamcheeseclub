@@ -4,7 +4,7 @@ from flask import Flask, render_template
 
 @app.route('/')
 def index():
-    return render_template('ccc.html')
+    return render_template('index.html')
 
 @app.route('/home')
 def home():
