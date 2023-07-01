@@ -43,9 +43,9 @@
         <div id="navbar">
             <img  id="logo" src="static/images/creamcheeseclub.jpg" alt="">
     
-            <li><a href="{{url_for('home')}}">Home</a></li>
-            <li><a href="{{url_for('aboutus')}}">About Us</a></li>
-            <li><a href="{{url_for('faq')}}">FAQs</a></li>
+            <li><a href="render_template('home.html')">Home</a></li>
+            <li><a href="render_template('aboutus.html')">About Us</a></li>
+            <li><a href="render_template('faq.html')">FAQs</a></li>
             <a href="https://www.instagram.com/creamcheeseclub" target="_blank" rel="noopener noreferrer" class="icon" id="ig">
                 <i class="fa fa-instagram" style="font-size:5vw; float: inline-end;"></i>
             </a>
@@ -67,7 +67,7 @@
                                 <h1>Garlic & Chives</h1>
                                 <p>Aromatic flavors of garlic with mild zest of chives.</p>
                             </div>
-                            <img src="static/images/matcha.JPG" alt="">
+                            <img src="static/images/matcha.jpg" alt="">
                         </div>
                         <br>
 
