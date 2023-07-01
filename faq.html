@@ -1,116 +1,198 @@
-{% extends "base.html" %}
+<!doctype html>
 
-{% block content %}
+<html lang="en">
 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>creamcheeseclub.com</title>
 
-<div id="fq">
+        <link rel = "icon" href = "/static/images/home.jpg" type = "image/x-icon">
 
-    <h1 id="faqtitle" class="center">Frequently Asked Questions</h1>
-    <img src="../static/images/contact.jpg" alt="" id="contactimg">
+        <!-- CSS -->
+        <link rel="stylesheet" href="/static/css/ccc.css"> 
 
+        <!-- JS -->
+        <script src="../static/js/ccc.js"></script>
 
-    <div id="faq">
-        <button class="accordion">What sizes of cream cheese do you offer?</button>
-        <div class="panel">
-        <p>Our cream cheese is available in three sizes: small, medium, and large, catering to different needs and preferences. </p>
-        </div>
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+        -->
 
-        <button class="accordion">How long does the cream cheese stay fresh and what are the storing conditions?</button>
-        <div class="panel">
-        <p>Our cream cheese is made fresh and has a shelf life of approximately 3 weeks. For optimal freshness, it is recommended to 
-            store our cream cheese in a cool area at a temperature below 5 degrees Celsius.</p>
-        </div>
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gamja+Flower">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barrio">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light">
 
-        <button class="accordion">Do you offer any specialty or limited edition cream cheese flavors?</button>
-        <div class="panel">
-        <p>Yes, we occasionally introduce specialty or limited edition cream cheese flavors to surprise and delight our customers. 
-            Keep an eye out for exciting new offerings!</p>
-        </div>
+        <!-- Bootstrap 5.2.0 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-        <button class="accordion">Are your cream cheeses suitable for individuals with dietary restrictions (e.g., lactose-free / nut-free)?</button>
-        <div class="panel">
-        <p>Yes, we understand the importance of catering to dietary restrictions. We offer the options such as lactose-free and nut-free cream 
-            cheeses to accommodate various dietary preferences.</p>
-        </div>
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-        <button class="accordion">Can I place a bulk order for events or special occasions?</button>
-        <div class="panel">
-        <p>Certainly! We welcome bulk orders for events or special occasions at discounted prices, ensuring that everyone can savor the 
-            delightful taste of our cream cheese. Please reach out to our customer support team to discuss your specific requirements.</p>
-        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
-        <button class="accordion">What are the delivery options and charges for shipping cream cheese?</button>
-        <div class="panel">
-        <p>While we currently do not provide delivery options for shipping cream cheese, we do offer a convenient pick-up option at no additional cost. 
-            You can collect your order directly from our Melbourne CBD, Doncaster, or Point Cook locations, ensuring a hassle-free experience.</p>
-        </div>
+    <body>
 
-        <button class="accordion">Is there a minimum order requirement for purchasing cream cheese?</button>
-        <div class="panel">
-        <p>There is no minimum order requirement for purchasing cream cheese from our online shop. You can order as little or as much as you desire.</p>
-        </div>
-
-        <button class="accordion">How far in advance should I place my order to ensure availability?</button>
-        <div class="panel">
-        <p>To ensure availability, we recommend placing your cream cheese order at least three days in advance.</p>
-        </div>
-
-        <button class="accordion">What are the storage recommendations for your cream cheese products?</button>
-        <div class="panel">
-        <p>For optimal freshness, we suggest storing our cream cheese products in the refrigerator. It's best to follow the storage instructions provided with your order.</p>
-        </div>
-
-        <button class="accordion">Are there any discounts or promotions available for regular customers?</button>
-        <div class="panel">
-        <p>We are thrilled to offer special discounts and promotions to our regular customers. Stay updated on the latest deals and offers by 
-            following us on social media. Keep an eye out for exciting discounts that will make your cream cheese experience even more delightful!</p>
-        </div>
-
-        <button class="accordion">Do you offer gift packaging or options for sending cream cheese as a gift?</button>
-        <div class="panel">
-        <p>Yes, we provide gift packaging options for sending cream cheese as a thoughtful present. You can select gift packaging during the ordering process.</p>
-        </div>
-
-        <button class="accordion">Are the ingredients used in your cream cheeses sourced locally or sustainably?</button>
-        <div class="panel">
-        <p>At our cream cheese shop, we place a high priority on sourcing ingredients locally and sustainably whenever feasible. Supporting local producers 
-            and embracing environmentally friendly practices is at the core of our values. In addition, we are dedicated to using only premium products to ensure the 
-            utmost quality in every bite.</p>
-        </div>
-
-        <button class="accordion">Are your cream cheese products available across Australia?</button>
-        <div class="panel">
-        <p>Currently, we are only located at Melbourne. We look forward to supplying our products across Australia in the near future.</p>
-        </div>
-
-        <button class="accordion">How can I contact customer support for any further inquiries or assistance?</button>
-        <div class="panel">
-        <p>If you have any further inquiries or require assistance, our dedicated customer support team is ready to help. You can reach out to us via email or 
-            message our social media account and we'll be delighted to assist you.</p>
-        </div>
-
-    </div>
-</div>
-
-
-<script>
+        <div id="navbar">
+            <img  id="logo" src="/static/images/creamcheeseclub.jpg" alt="">
     
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('aboutus')}}">About Us</a></li>
+            <li><a href="{{url_for('faq')}}">FAQs</a></li>
+            <a href="https://www.instagram.com/creamcheeseclub" target="_blank" rel="noopener noreferrer" class="icon" id="ig">
+                <i class="fa fa-instagram" style="font-size:5vw; float: inline-end;"></i>
+            </a>
+        </div>
+
+        <div id="fq">
+
+            <h1 id="faqtitle" class="center">Frequently Asked Questions</h1>
+            <img src="../static/images/contact.jpg" alt="" id="contactimg">
+
+
+            <div id="faq">
+                <button class="accordion">What sizes of cream cheese do you offer?</button>
+                <div class="panel">
+                <p>Our cream cheese is available in three sizes: small, medium, and large, catering to different needs and preferences. </p>
+                </div>
+
+                <button class="accordion">How long does the cream cheese stay fresh and what are the storing conditions?</button>
+                <div class="panel">
+                <p>Our cream cheese is made fresh and has a shelf life of approximately 3 weeks. For optimal freshness, it is recommended to 
+                    store our cream cheese in a cool area at a temperature below 5 degrees Celsius.</p>
+                </div>
+
+                <button class="accordion">Do you offer any specialty or limited edition cream cheese flavors?</button>
+                <div class="panel">
+                <p>Yes, we occasionally introduce specialty or limited edition cream cheese flavors to surprise and delight our customers. 
+                    Keep an eye out for exciting new offerings!</p>
+                </div>
+
+                <button class="accordion">Are your cream cheeses suitable for individuals with dietary restrictions (e.g., lactose-free / nut-free)?</button>
+                <div class="panel">
+                <p>Yes, we understand the importance of catering to dietary restrictions. We offer the options such as lactose-free and nut-free cream 
+                    cheeses to accommodate various dietary preferences.</p>
+                </div>
+
+                <button class="accordion">Can I place a bulk order for events or special occasions?</button>
+                <div class="panel">
+                <p>Certainly! We welcome bulk orders for events or special occasions at discounted prices, ensuring that everyone can savor the 
+                    delightful taste of our cream cheese. Please reach out to our customer support team to discuss your specific requirements.</p>
+                </div>
+
+                <button class="accordion">What are the delivery options and charges for shipping cream cheese?</button>
+                <div class="panel">
+                <p>While we currently do not provide delivery options for shipping cream cheese, we do offer a convenient pick-up option at no additional cost. 
+                    You can collect your order directly from our Melbourne CBD, Doncaster, or Point Cook locations, ensuring a hassle-free experience.</p>
+                </div>
+
+                <button class="accordion">Is there a minimum order requirement for purchasing cream cheese?</button>
+                <div class="panel">
+                <p>There is no minimum order requirement for purchasing cream cheese from our online shop. You can order as little or as much as you desire.</p>
+                </div>
+
+                <button class="accordion">How far in advance should I place my order to ensure availability?</button>
+                <div class="panel">
+                <p>To ensure availability, we recommend placing your cream cheese order at least three days in advance.</p>
+                </div>
+
+                <button class="accordion">What are the storage recommendations for your cream cheese products?</button>
+                <div class="panel">
+                <p>For optimal freshness, we suggest storing our cream cheese products in the refrigerator. It's best to follow the storage instructions provided with your order.</p>
+                </div>
+
+                <button class="accordion">Are there any discounts or promotions available for regular customers?</button>
+                <div class="panel">
+                <p>We are thrilled to offer special discounts and promotions to our regular customers. Stay updated on the latest deals and offers by 
+                    following us on social media. Keep an eye out for exciting discounts that will make your cream cheese experience even more delightful!</p>
+                </div>
+
+                <button class="accordion">Do you offer gift packaging or options for sending cream cheese as a gift?</button>
+                <div class="panel">
+                <p>Yes, we provide gift packaging options for sending cream cheese as a thoughtful present. You can select gift packaging during the ordering process.</p>
+                </div>
+
+                <button class="accordion">Are the ingredients used in your cream cheeses sourced locally or sustainably?</button>
+                <div class="panel">
+                <p>At our cream cheese shop, we place a high priority on sourcing ingredients locally and sustainably whenever feasible. Supporting local producers 
+                    and embracing environmentally friendly practices is at the core of our values. In addition, we are dedicated to using only premium products to ensure the 
+                    utmost quality in every bite.</p>
+                </div>
+
+                <button class="accordion">Are your cream cheese products available across Australia?</button>
+                <div class="panel">
+                <p>Currently, we are only located at Melbourne. We look forward to supplying our products across Australia in the near future.</p>
+                </div>
+
+                <button class="accordion">How can I contact customer support for any further inquiries or assistance?</button>
+                <div class="panel">
+                <p>If you have any further inquiries or require assistance, our dedicated customer support team is ready to help. You can reach out to us via email or 
+                    message our social media account and we'll be delighted to assist you.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer" class="row">
+            <div class="col-sm-5">
+                <h1><srtong>Location</srtong></h1>
+                <p>We are currently a small local business, however, with your continuous support, we are looking forward to having a physical store in the near future.</p>
+                
+                <h1><srtong>Open 24/7</srtong></h1>
+                <p>We take great pride in offering you the finest cream cheese in town all day every day, ensuring you never have to worry about finding the perfect spread.</p>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-5">
+                <h1><srtong>Contact Us</srtong></h1>
+                <p>We welcome you to reach out to us with any requests or feedback you may have. We value your input and look forward to hearing from you.</p>
+
+                <div id="contact">
+                    <div id="contact-info">
+                        <p><i class="fa fa-envelope"></i></p><p>creamcheeseclub00@gmail.com</p>
+                    </div>
+
+                    <div id="contact-info">
+                        <p><i class="fa fa-instagram"></i></p><p>creamcheeseclub</p>
+                    </div>
+
+                    <div id="contact-info">
+                        <p><i class="fa fa-facebook"></i></p><p>cream cheese club</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script>
             
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        } 
-        });
-    }
-</script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+                    
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+                });
+            }
+        </script>
 
+    </body>
 
+</html>
 
-{% endblock %}

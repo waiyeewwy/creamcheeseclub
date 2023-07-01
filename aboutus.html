@@ -1,39 +1,124 @@
-{% extends "base.html" %}
+<!doctype html>
 
-{% block content %}
+<html lang="en">
 
-    <div id="aboutus">
-        
-        <h1 id="ccofbagelright">THE <span style="color:rgb(246, 186, 143);">CREAM</span> <span style="color: gold;">CHEESE</span> TO YOUR BAGEL</h1>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>creamcheeseclub.com</title>
 
+        <link rel = "icon" href = "/static/images/home.jpg" type = "image/x-icon">
 
-        <div id="aboutimg">
-            <img src="../static/images/about.jpg" alt="">
-            
+        <!-- CSS -->
+        <link rel="stylesheet" href="/static/css/ccc.css"> 
+
+        <!-- JS -->
+        <script src="../static/js/ccc.js"></script>
+
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+        -->
+
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gamja+Flower">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barrio">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light">
+
+        <!-- Bootstrap 5.2.0 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <div id="navbar">
+            <img  id="logo" src="/static/images/creamcheeseclub.jpg" alt="">
+    
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('aboutus')}}">About Us</a></li>
+            <li><a href="{{url_for('faq')}}">FAQs</a></li>
+            <a href="https://www.instagram.com/creamcheeseclub" target="_blank" rel="noopener noreferrer" class="icon" id="ig">
+                <i class="fa fa-instagram" style="font-size:5vw; float: inline-end;"></i>
+            </a>
         </div>
 
-        <div id="aboutdesc">
+
+
+        <div id="aboutus">
+        
+            <h1 id="ccofbagelright">THE <span style="color:rgb(246, 186, 143);">CREAM</span> <span style="color: gold;">CHEESE</span> TO YOUR BAGEL</h1>
+
+
+            <div id="aboutimg">
+                <img src="../static/images/about.jpg" alt="">
+                
+            </div>
+
+            <div id="aboutdesc">
 
             
         
-            <p>Introducing J and E, two adventurous university students living on the 
-                edge, embarking on a quest through local supermarkets in search of the perfect cream cheese. J wasn't a fan 
-                of cheese at the start, but E's <strong style="color:rgb(52, 147, 185);">passion for cream cheese</strong> was undeniable, resulting in their grocery trolley 
-                cart always filled with this delectable spread.</p> 
+                <p>Introducing J and E, two adventurous university students living on the 
+                    edge, embarking on a quest through local supermarkets in search of the perfect cream cheese. J wasn't a fan 
+                    of cheese at the start, but E's <strong style="color:rgb(52, 147, 185);">passion for cream cheese</strong> was undeniable, resulting in their grocery trolley 
+                    cart always filled with this delectable spread.</p> 
 
-            <p>After trying numerous store-bought creamcheeses, they felt something 
-                was amiss - the intensity, portion, or flavors just didn't hit the mark. That's when <strong style="color:rgb(211, 166, 53);">inspiration</strong> struck! They decided to <strong style="color:rgb(255, 134, 48);">create their very own 
-                    cream cheese</strong>, infused with their unique touch.</p>
+                <p>After trying numerous store-bought creamcheeses, they felt something 
+                    was amiss - the intensity, portion, or flavors just didn't hit the mark. That's when <strong style="color:rgb(211, 166, 53);">inspiration</strong> struck! They decided to <strong style="color:rgb(255, 134, 48);">create their very own 
+                        cream cheese</strong>, infused with their unique touch.</p>
+                    
+                <p>Yes, you heard it right. It's their cream cheese, crafted with their 
+                    desired <strong style="color:tomato;">intensity</strong>, <strong style="color:forestgreen;">portions</strong>, <strong style="color:dodgerblue;">flavors</strong>, and <strong style="color:firebrick;">overflowing love</strong>! (Unbiased opinion... well, maybe just a little biased) It stands among the best, finest, 
+                    and <strong style="color:mediumpurple">most awesome cream cheeses</strong> they've ever tasted. Now, they 
+                    want to share this extraordinary creation with the world, starting with you.</p>
+                    
+                <p>Don't hesitate any longer! Come on board and <strong style="color:rgb(144, 192, 49)">join the cream cheese club</strong> to elevate your cheese experience to extraordinary heights.</p>
                 
-            <p>Yes, you heard it right. It's their cream cheese, crafted with their 
-                desired <strong style="color:tomato;">intensity</strong>, <strong style="color:forestgreen;">portions</strong>, <strong style="color:dodgerblue;">flavors</strong>, and <strong style="color:firebrick;">overflowing love</strong>! (Unbiased opinion... well, maybe just a little biased) It stands among the best, finest, 
-                and <strong style="color:mediumpurple">most awesome cream cheeses</strong> they've ever tasted. Now, they 
-                want to share this extraordinary creation with the world, starting with you.</p>
-                
-            <p>Don't hesitate any longer! Come on board and <strong style="color:rgb(144, 192, 49)">join the cream cheese club</strong> to elevate your cheese experience to extraordinary heights.</p>
-            
+            </div>
+
         </div>
 
-    </div>
-{% endblock %}
+    
+        <div id="footer" class="row">
+            <div class="col-sm-5">
+                <h1><srtong>Location</srtong></h1>
+                <p>We are currently a small local business, however, with your continuous support, we are looking forward to having a physical store in the near future.</p>
+                
+                <h1><srtong>Open 24/7</srtong></h1>
+                <p>We take great pride in offering you the finest cream cheese in town all day every day, ensuring you never have to worry about finding the perfect spread.</p>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-5">
+                <h1><srtong>Contact Us</srtong></h1>
+                <p>We welcome you to reach out to us with any requests or feedback you may have. We value your input and look forward to hearing from you.</p>
+
+                <div id="contact">
+                    <div id="contact-info">
+                        <p><i class="fa fa-envelope"></i></p><p>creamcheeseclub00@gmail.com</p>
+                    </div>
+        
+                    <div id="contact-info">
+                        <p><i class="fa fa-instagram"></i></p><p>creamcheeseclub</p>
+                    </div>
+        
+                    <div id="contact-info">
+                        <p><i class="fa fa-facebook"></i></p><p>cream cheese club</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
 
