@@ -86,11 +86,17 @@ video {
 }
 
 
-
 #ccofbagel{
     padding-top: 5%;
-    padding-bottom: 5%;
     font-size: 4vw;
+}
+
+
+#ccofbagelright{
+    padding-top: 5%;
+    padding-right: 10%;
+    font-size: 4.5vw;
+    text-align: right;
 }
 
 
@@ -221,9 +227,6 @@ video {
 
 
 #aboutdesc{
-    background-image: url('../images/background1.jpg');
-    background-repeat: no-repeat;
-    background-size: 1000px 400px;
     padding-top: 2%;
 }
 
@@ -236,24 +239,24 @@ video {
 
 
 #aboutimg img{
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
     padding-left: 5%;
-    padding-right: 5%;
     float: left;
+    padding-top: 5%;
 }
 
 #aboutdesc {
     padding-right: 10%;
     padding-bottom: 5%;
-    width: 60%;
+    width: 50%;
     text-align: right;
     float: right;
 }
 
 
 #aboutdesc p{
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 
@@ -263,18 +266,18 @@ video {
     height: auto;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 5%;
 }
 
 
 #faqtitle{
     padding-top: 30px;
     font-size: 7vw;
-    /*font-family: 'Just Me Again Down Here';*/
 }
 
 #faq{
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
 }
 
 .accordion {
@@ -422,7 +425,15 @@ video {
     }
 
 
+    #ccofbagelright{
+        font-size: 40px;
+        text-align: center;
+        padding: 5%;
+    }
+
     
+
+
 
 }
 
