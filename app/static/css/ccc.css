@@ -220,12 +220,23 @@ video {
 }
 
 
-#aboutus{
-    background-image: url('../images/background.jpg');
+#aboutdesc{
+    background-image: url('../images/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: 1000px 400px;
+    padding-top: 2%;
 }
 
+
+#aboutdesc p{
+    background-color: #ffffff;
+    opacity: 0.7;
+    
+}
+
+
 #aboutimg img{
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     padding-left: 5%;
     padding-right: 5%;
@@ -235,7 +246,7 @@ video {
 #aboutdesc {
     padding-right: 10%;
     padding-bottom: 5%;
-    width: 50%;
+    width: 60%;
     text-align: right;
     float: right;
 }
